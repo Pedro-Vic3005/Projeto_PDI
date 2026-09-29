@@ -7,7 +7,7 @@ import numpy as np
 
 
 # 1. Carregar a imagem em tons de cinza.
-imagem = Path("C:/Users/aluno/Desktop/pvga/imagens/lena.png")
+imagem = Path(r"../imagens/lena.png")
 original = cv2.imread(str(imagem), cv2.IMREAD_GRAYSCALE)
 if original is None:
     raise FileNotFoundError(f"Não foi possível abrir {imagem}")

@@ -130,7 +130,7 @@ def calcular_metricas(original, restaurada, bordas, referencia):
 
 
 # 1. Carregar imagem e acrescentar ruído sal e pimenta (densidade 0,02).
-imagem = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(r"C:\Users\aluno\Desktop\pvga\imagens\lena.png")
+imagem = Path(r"../imagens/lena.png")
 original = cv2.imread(str(imagem), cv2.IMREAD_GRAYSCALE)
 if original is None:
     raise FileNotFoundError(f"Não foi possível abrir {imagem}. Passe o caminho da imagem ao executar.")
